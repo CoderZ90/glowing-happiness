@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* PUTTING THE FONT `MONUMENT EXTENDED` IN OUR WEB PAGE */
+    font-family: 'Monument Extended'
+}
+
+html,
+body {
+    /* MAKES THE DEFAULT WINDOWS CURSOR TO DISAPPEAR SUBSCRIBE PLEASE AND LIKE THE VIDEO */
+    cursor: none;
+}
+
+.nav-wrapper {
+    width: 100%;
+    background: #fff;
+    height: 100vh;
+}
+
+nav {
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    width: 100%;
+}
+
+.hover-this {
+    transition: 0.3s ease;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+span {
+    display: inline-block;
+    font-size: 36px;
+    text-transform: uppercase;
+    font-weight: lighter;
+    margin: 0 70px;
+    transition: transform 0.3s ease;
+}
+
+.cursor {
+    pointer-events: none;
+    padding: 0.3rem;
+    background: #FFF;
+    position: fixed;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+    mix-blend-mode: difference;
+}
+
+.hover-this:hover ~ .cursor {
+    transform: translate(-50%, -50%) scale(8);
+    cursor: none;
+}
